@@ -164,9 +164,13 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .nav-bar {
-  max-width: 800px;
+  background: lightgray;
+  max-width: 100%;
+  position: fixed;
+  border-radius: 5px;
   width: 100%;
   margin: 0 auto;
   display: flex;
