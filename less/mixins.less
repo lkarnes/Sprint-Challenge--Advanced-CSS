@@ -1,12 +1,28 @@
 // Mixins Here
 
-.btn-mixin() {
-    color: @wild-sand;
+.btn-mixin(@bg-color: @btn-bg-color, @color: @wild-sand) {
+    color: @color;
     font-size: 1.8rem;
     font-weight: bold;
     padding: 10px;
     text-align: center;
-    background: @btn-bg-color;
+    background: @bg-color;
     border-radius: 5px;
     width: 100px;
+    &:hover {
+        background: @shuttle-gray;
+        color: @btn-bg-color;
+    }
+}
+
+.nav-mixin() {
+    width: 51%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-around;
+    @media @phone {
+        width: 100%;
+        }
 }
