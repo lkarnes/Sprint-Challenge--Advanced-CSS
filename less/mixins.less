@@ -12,6 +12,7 @@
     &:hover {
         background: @shuttle-gray;
         color: @btn-bg-color;
+        transition: all ease-in-out .3s;
     }
 }
 
@@ -22,6 +23,13 @@
     padding: 20px 0 10px;
     display: flex;
     justify-content: space-around;
+    a {
+        &:hover {
+        color: @shuttle-gray;
+        transition: all ease-in-out .3s
+        }
+    }
+    
     @media @phone {
         width: 100%;
         }
