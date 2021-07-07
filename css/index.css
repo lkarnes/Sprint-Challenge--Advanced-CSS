@@ -164,9 +164,13 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .nav-bar {
-  max-width: 800px;
+  background: lightgray;
+  max-width: 100%;
+  position: fixed;
+  border-radius: 5px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -183,6 +187,10 @@ p {
   padding: 20px 0 10px;
   display: flex;
   justify-content: space-around;
+}
+.nav-bar nav a:hover {
+  color: #5E6164;
+  transition: all ease-in-out 0.3s;
 }
 @media ( max-width: 550px ) {
   .nav-bar nav {
@@ -284,6 +292,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: #5E6164;
   color: #22283A;
+  transition: all ease-in-out 0.3s;
 }
 @media ( max-width: 550px ) {
   .home .walk .walk-text .btn {
